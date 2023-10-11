@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+      
+    }
+}
+
+@keyframes slide_left {
+    0% {
+        transform: translateX(-100%);
+    }
+      100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide_right {
+    0% {
+        transform: translateX(100%);
+    }
+      100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide_down {
+    0% {
+        transform: translateY(100%);
+    }
+      100% {
+        transform: translateY(0);
+    }
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Poppins';
+}
+
+.container2{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: #0e0c0c;
+} 
+
+
+.container2{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    color: #0e0c0c;
+} 
+
+#main_heading{
+    font-size: 20vh;
+    animation: slide_left 2s ease-out;
+    background: -webkit-linear-gradient(rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+#sub_heading{
+    position: absolute;
+    font-size: 3vw;
+    top: 5px;
+    right: 5px;
+    animation: slide_right 1s ease-out;
+    background: -webkit-linear-gradient(rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#main_image{
+    position: absolute;
+    top: 280px;
+    right: 100px;
+    height: 200px;
+    width: auto;
+    transform-origin: center;
+    animation: rotate 50s linear infinite,slide_down 0.5s ease-out;
+}
+
+section{
+    padding: 40px;
+}
+
+#skills_abilities:hover{
+    transform: translateX(5px);
+    transform: translateY(5px);
+}
+
+#education:hover{
+    transform: translateX(5px);
+    transform: translateY(5px);
+}
+
+#soft_skills:hover{
+    transform: translateX(5px);
+    transform: translateY(5px);
+}
+
+#hard_skills:hover{
+    transform: translateX(5px);
+    transform: translateY(5px);
+}
+
+a {
+    color: #fff;
+}
+
+#about_me{
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    color: #ffffff;
+    border-radius: 60px;
+}
+
+#contact_me{
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    color: #fff;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
